@@ -1,42 +1,38 @@
 {
-  "name": "npm-module-templ",
+  "name": "radiogarden-mode",
   "version": "1.0.0",
-  "description": "npm module template",
+  "description": " NPM Module for Radio.Garden's Undocumented API. ",
   "main": "lib/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-minify": "^0.5.1",
     "cross-env": "^6.0.3",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "jest": "^24.9.0",
     "rimraf": "^3.0.0"
   },
   "scripts": {
     "clean": "rimraf lib",
-    "test": "jest",
     "lint": "eslint src tests",
     "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maslianok/npm-module-template.git"
+    "url": "git+https://github.com/Obelous/RadioGarden-Node.git"
   },
   "keywords": [
-    "javascript",
-    "floating-point",
-    "floating"
+    "radio.garden",
+    "radio",
+    "radiogarden"
   ],
-  "author": "YOUR NAME",
+  "author": "Obelous",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maslianok/npm-module-template/issues"
+    "url": "https://github.com/Obelous/RadioGarden-Node/issues"
   },
-  "homepage": "https://github.com/maslianok/npm-module-template#readme"
+  "homepage": "https://github.com/Obelous/RadioGarden-Node#readme"
 }
