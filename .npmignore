@@ -6,7 +6,7 @@ package-lock.json
 yarn.lock
 
 # project files
-src
+src/test.js
 test
 examples
 CHANGELOG.md
